@@ -1,0 +1,1 @@
+# stingy-men-association-generator
