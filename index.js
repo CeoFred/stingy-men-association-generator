@@ -23,7 +23,7 @@ id_department_Placeholder.textContent = id_department.value;
 id_number_placeholder.textContent = "SMAN-"+id_number;
 
   html2canvas(document.querySelector('#capture')).then(canvas => {
-    
+    window.top = 0;
     var link = document.createElement('a');
   link.download = 'passport.png';
   link.href = canvas.toDataURL()
