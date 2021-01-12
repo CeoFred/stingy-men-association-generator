@@ -16,6 +16,10 @@ footer {
   color: #fff
 }
 
+.main{
+  overflow-x: auto;
+  padding:40px
+}
 .card-canva-container {
   width:500px;
   min-height: 300px;
@@ -24,9 +28,7 @@ footer {
   border-radius: 5px;
   border:2px solid;
   font-family: 'Open Sans', sans-serif;
-  /* visibility: hiden; */
-  position: fixed;
-  top:-300px;
+  overflow-x: auto;
 }
 .card-canva-body-info-passport{
   height: 150px;
