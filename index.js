@@ -9,13 +9,35 @@ const id_number = makeid(5);
 generateButton.addEventListener('click',function(e){
   e.preventDefault();
   e.target.innerHTML = 'Generating..'
-  e.target.disabeld = true;
+  e.target.disabled = true;
 
   const id_name_Placeholder = document.getElementById('id_name')
 const id_branch_Placeholder = document.getElementById('id_position')
 const id_department_Placeholder = document.getElementById('id_branch');
 const id_number_placeholder = document.getElementById('id_no');
+const messageContainer = document.getElementById('error_message')
 
+
+if(id_name.value.trim() === ""){
+  messageContainer.innerHTML = "Please provide a name";
+    e.target.innerHTML = 'Generate'
+  e.target.disabled = false;
+  return;
+}
+
+if(id_department.value.trim() === "Woman"){
+  messageContainer.innerHTML = "Please, are you are woman?? 🙄🙄 Choose your department ojare!!";
+   e.target.innerHTML = 'Generate'
+  e.target.disabled = false;
+  return;
+}
+
+if(id_branch.value.trim() === ""){
+  messageContainer.innerHTML = "Please provide a branch name";
+   e.target.innerHTML = 'Generate'
+  e.target.disabled = false;
+  return;
+}
 
 id_name_Placeholder.textContent = id_name.value;
 id_branch_Placeholder.textContent = id_branch.value;
