@@ -26,7 +26,7 @@ id_number_placeholder.textContent = "SMAN-"+id_number;
      document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0;
     var link = document.createElement('a');
-  link.download = 'passport.png';
+  link.download = id_number+'.jpg';
   link.href = canvas.toDataURL()
     link.click();
 
