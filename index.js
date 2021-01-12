@@ -26,7 +26,7 @@ if(id_name.value.trim() === ""){
 }
 
 if(id_department.value.trim() === "Woman"){
-  messageContainer.innerHTML = "Please, are you are woman?? 🙄🙄 Choose your department ojare!!";
+  messageContainer.innerHTML = "Please, are you are woman?? Choose your department ojare!!";
    e.target.innerHTML = 'Generate'
   e.target.disabled = false;
   return;
@@ -51,6 +51,8 @@ id_number_placeholder.textContent = "SMAN-"+id_number;
   link.download = id_number+'.jpg';
   link.href = canvas.toDataURL()
     link.click();
+    e.target.innerHTML = 'Generate'
+  e.target.disabled = false;
 
 }).catch(e => {
   console.log(e)
