@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+body {
+  padding:0;
+  margin: 0;
+  height: 100vh;
+}
+
+footer {
+  position: absolute;;
+  bottom: 0;
+  background-color: black;
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  padding:20px;
+  color: #fff
+}
+
+.card-canva-container {
+  width:500px;
+  min-height: 300px;
+  max-height: 300px;
+  height: 300px;
+  border-radius: 5px;
+  border:2px solid;
+  font-family: 'Open Sans', sans-serif;
+  /* visibility: hiden; */
+  position: fixed;
+  top:-300px;
+}
+.card-canva-body-info-passport{
+  height: 150px;
+    width: 150px;
+    float: right;
+    border-radius: 5px;
+}
+
+.canva-header{
+  height: 30%;
+}
+
+.passport-image{
+  display: flex;
+  border:2px solid;
+  min-height: 100%;
+}
+.card-canva-body {
+  min-height: 70%!important;
+  display: flex;
+    align-items: center;
+}
+.card-canva-header{
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.card-canva-logo{
+  width: 24%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-canva-body{
+  
+}
+
+.card-canva-title{
+  /* width: 24%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
