@@ -44,7 +44,7 @@ id_branch_Placeholder.textContent = id_branch.value;
 id_department_Placeholder.textContent = id_department.value;
 id_number_placeholder.textContent = "SMAN-"+id_number;
 
-  html2canvas(document.querySelector('#capture')).then(canvas => {
+  html2canvas(document.querySelector('#capture'),{ width:500,height:300}).then(canvas => {
  
   window.scrollTo(0,0)
     var link = document.createElement('a');
