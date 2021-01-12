@@ -45,8 +45,8 @@ id_department_Placeholder.textContent = id_department.value;
 id_number_placeholder.textContent = "SMAN-"+id_number;
 
   html2canvas(document.querySelector('#capture')).then(canvas => {
-     document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0;
+ 
+  window.scrollTo(0,0)
     var link = document.createElement('a');
   link.download = id_number+'.jpg';
   link.href = canvas.toDataURL()
